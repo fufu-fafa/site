@@ -19,12 +19,12 @@ body {
     font-family: 'baskervville';
     margin: 0;
     padding: 0;
-    background-color: var(--color-dark-2);
+    background-color: black;
     color: white;
 }
 
 header {
-    background-color: var(--color-secondary);
+    background-color: var(--color-dark-2);
     font-family: 'baskervville';
     color: white;
     padding: 20px 10px;
@@ -38,7 +38,7 @@ header {
 }
 
 .project {
-    background: var(--color-dark-2);
+    background: black;
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
@@ -48,13 +48,12 @@ header {
 
 .project:hover {
     transform: translateY(-5px);
-    background: var(--color-secondary);
 }
 
 .project-title {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: cornflowerblue;
+    color: white;
 }
 
 .project-description {
@@ -64,7 +63,7 @@ header {
 
 .project-link {
     text-decoration: none;
-    color: green;
+    color: #2F67E9;
     font-weight: bold;
 }
 
