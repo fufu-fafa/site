@@ -1,0 +1,79 @@
+:root {
+    --color-primary: #00377E;
+    --color-secondary: #002D67;
+    --color-accent: #002657;
+    --color-dark-1: #001E45;
+    --color-dark-2: #00193B;
+    --color-dark-3: #00132D;
+}
+
+@font-face {
+    font-family: 'baskervville';
+    src: url('../webfont/baskervville-regular-webfont.woff2') format('woff2'),
+         url('../webfont/baskervville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'baskervville';
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark-2);
+    color: white;
+}
+
+header {
+    background-color: var(--color-secondary);
+    font-family: 'baskervville';
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.project {
+    background: var(--color-dark-2);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background: var(--color-secondary);
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+
+.project-description {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.project-link {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+.project-img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

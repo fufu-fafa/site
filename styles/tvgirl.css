@@ -1,0 +1,80 @@
+:root {
+    --color-background: #20062d;
+    --color-text: white;
+    --color-bright-pink: #ed2788;
+    --color-project-hover: #331244;
+    --color-dark-pink: #740645;
+    --color-link: #2470EB;
+}
+
+
+@font-face {
+    font-family: 'hobo_stdregular';
+    src: url('../webfont/hobostd-webfont.woff2') format('woff2'),
+         url('../webfont/hobostd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'hobo_stdregular';
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--color-bright-pink);
+    font-family: 'hobo_stdregular';
+    color: var(--color-dark-pink);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.project {
+    background: var(--color-background);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background: var(--color-project-hover);
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--color-bright-pink);
+}
+
+.project-description {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #2470EB;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+.project-img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
