@@ -143,9 +143,11 @@ gameLoop()
     const codeDisplay = document.getElementById("modalCode");
     codeDisplay.textContent = codeSnippets[codeKey];
     modal.style.display = "flex";
+    document.body.style.overflow = 'hidden';
   }
   
   function closeModal() {
     document.getElementById("codeModal").style.display = "none";
+    document.body.style.overflow = '';
   }
   
