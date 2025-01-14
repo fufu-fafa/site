@@ -3,6 +3,7 @@
   --text-color: #000000;
   --button-bg-color: #000000;
   --button-text-color: #ffffff;
+  --project-bg-color: #CFCFCF;
 }
 
 a {
@@ -88,11 +89,29 @@ section {
   text-align: center;
 }
 
-.project img {
-  width: 100%;
-  max-width: 300px;
+body.dark-mode .project {
+  --project-bg-color: #212121;
+}
+
+.project {
+  background: var(--project-bg-color);
+  width: 75%;
+  margin: 70px auto;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(105%);
+}
+
+.project-img {
+  width: 40%;
   height: auto;
-  margin: 10px 0;
+  border-radius: 0px;
+  margin-bottom: 0px;
 }
 
 footer {
@@ -100,4 +119,43 @@ footer {
   color: #AFD3D3;
   text-align: center;
   padding: 1rem 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+.modal-content pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
 }

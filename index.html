@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <h1>My Portfolio</h1>
+      <h1>John Coding</h1>
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -27,13 +27,19 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <img src="img/tictactoe.jpg" alt="tictactoe">
-      <h3>Tictactoe</h3>
+      <h3>Snake Game</h3>           
+      <img src="img/snake.png" alt="snake" class="project-img">
       <p>Basic.</p>
+      <button onclick="showCode('snakeCode')">Show Code</button>
     </div>
     <div class="project">
-      <img src="img/calc.jpg" alt="calculator">
+      <h3>TicTacToe</h3>      
+      <img src="img/tictactoe.png" alt="tictactoe" class="project-img">
+      <p>Obviously.</p>
+    </div>
+    <div class="project">
       <h3>Calculator</h3>
+      <img src="img/calc.png" alt="calculator" class="project-img">
       <p>Obviously.</p>
     </div>
   </section>
@@ -49,5 +55,17 @@
     <p>&copy; 2025 John Coding. All rights reserved.</p>
   </footer>
   <script src="scripts/theme_toggle.js"></script>
+  <script src="scripts/modal.js"></script>
+</body>
+</html>
+
+  <!-- Modal for displaying code -->
+  <div id="codeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Code:</h3>
+      <pre id="modalCode"></pre>
+    </div>
+  </div>
 </body>
 </html>

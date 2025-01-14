@@ -72,6 +72,7 @@ header {
 .project-link:hover {
     text-decoration: underline;
 }
+
 .project-img {
     width: 50%;
     height: auto;
