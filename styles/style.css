@@ -97,7 +97,7 @@ body.dark-mode .project {
   background: var(--project-bg-color);
   width: 75%;
   margin: 70px auto;
-  padding: 10px 0px;
+  padding: 10px 30px;
   padding-bottom: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
