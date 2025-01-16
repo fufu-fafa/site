@@ -111,7 +111,7 @@ body.dark-mode .project {
 .project-img {
   width: 40%;
   height: auto;
-  border-radius: 0px;
+  border-radius: 12px;
   margin-bottom: 0px;
 }
 

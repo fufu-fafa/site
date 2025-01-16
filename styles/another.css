@@ -1,164 +1,84 @@
 :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --button-bg-color: #000000;
-    --button-text-color: #ffffff;
-    --project-bg-color: #CFCFCF;
-  }
-  
-  a {
-    color: #476B6B;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #5F8C8C;
-    text-decoration: underline;
-  }
-  
-  body.dark-mode a {
-    color: #82B1B1; /* Lighter tone for links in dark mode */
-  }
-  
-  body.dark-mode a:hover {
-    color: #AFD3D3; /* Hover effect for dark mode */
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    transition: color 0.3s ease;
-  }
-  
-  body.dark-mode {
-    --background-color: #000000;
-    --text-color: #f5f5f5;
-    --button-bg-color: #ffffff;
-    --button-text-color: #000000;
-  }
-  
-  button {
-    font-family: Arial, sans-serif;
-    transition: color 0.3s ease;
-  }
-  
-  header {
-    background: #354F4F;
-    color: #AFD3D3;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  header nav ul li a {
-    color: #AFD3D3;
-    text-decoration: none;
-  }
-  
-  button#theme-toggle {
-    position: absolute;
-    top: 17px;
-    right: 17px;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    border: none;
-    padding: 0.4rem 0.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button#theme-toggle:hover {
-    opacity: 0.8;
-  }
-  
-  section {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  body.dark-mode .project {
-    --project-bg-color: #212121;
-  }
-  
-  .project {
-    background: var(--project-bg-color);
-    width: 75%;
-    margin: 70px auto;
-    padding: 5px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .project:hover {
-    transform: scale(105%);
-  }
-  
-  .project-img {
-    width: 40%;
-    height: auto;
-    border-radius: 0px;
-    margin-bottom: 0px;
-  }
-  
-  footer {
-    background: #354F4F;
-    color: #AFD3D3;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-  }
-  .modal-content {
-    background-color: #fff;
-    position: relative;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-  .modal-content pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-  }
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-  }
+  --color-uno: #598392;
+  --color-dos: #124559;
+  --color-tres: #01161E;
+  --bg-color: #000;
+  --text-color: #F0F0F0;
+}
+
+@font-face {
+  font-family: 'baskerville';
+  src: url('../webfont/baskervville-regular-webfont.woff2') format('woff2'),
+       url('../webfont/baskervville-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: baskerville, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.project {
+  background: var(--color-tres);
+  border: 1px solid var(--color-dos);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.project:hover {
+  scale: 102%;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project p {
+  padding: 0 15px 20px;
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 20px 5px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--color-uno);
+  text-decoration: none;
+  font-weight: bold;
+}
