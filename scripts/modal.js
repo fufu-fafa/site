@@ -1,6 +1,6 @@
 // Code snippets for projects
 const codeSnippets = {
-    tetcode: `
+    tetriscode: `
 import pygame
 import random
 import os
