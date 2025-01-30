@@ -4,24 +4,30 @@
   --button-bg-color: #000000;
   --button-text-color: #ffffff;
   --project-bg-color: #CFCFCF;
+  --heavy-accent: #01497C;
+  --lighter-accent: #89C2D9;
+  --links-light: #2A6F97;
+  --links-light-hover: #61A5C2;
+  --links-dark: #4C9BB0;
+  --links-dark-hover: #76C1D4;
 }
 
 a {
-  color: #476B6B;
+  color: var(--links-light);
   text-decoration: none;
 }
 
 a:hover {
-  color: #5F8C8C;
+  color: var(--links-light-hover);
   text-decoration: underline;
 }
 
 body.dark-mode a {
-  color: #82B1B1; /* Lighter tone for links in dark mode */
+  color: var(--links-dark); /* Lighter tone for links in dark mode */
 }
 
 body.dark-mode a:hover {
-  color: #AFD3D3; /* Hover effect for dark mode */
+  color: var(--links-dark-hover); /* Hover effect for dark mode */
 }
 
 body {
@@ -47,9 +53,9 @@ button {
 }
 
 header {
-  background: #354F4F;
-  color: #AFD3D3;
-  padding: 1rem 0;
+  background: var(--heavy-accent);
+  color: var(--lighter-accent);
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -93,6 +99,10 @@ body.dark-mode .project {
   --project-bg-color: #212121;
 }
 
+#about p {
+  padding: 25px;
+}
+
 .project {
   background: var(--project-bg-color);
   width: 75%;
@@ -116,8 +126,8 @@ body.dark-mode .project {
 }
 
 footer {
-  background: #354F4F;
-  color: #AFD3D3;
+  background: var(--heavy-accent);
+  color: var(--lighter-accent);
   text-align: center;
   padding: 1rem 0;
 }
